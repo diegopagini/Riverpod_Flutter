@@ -3,9 +3,8 @@ import 'package:riverpod_app/config/config.dart';
 
 part 'state_providers.g.dart';
 
-@Riverpod(
-    keepAlive:
-        true) // To keep the state alive. If not, it will be destroyed the moment we stop using it.
+// To keep the state alive. If not, it will be destroyed the moment we stop using it.
+@Riverpod(keepAlive: true)
 class Counter extends _$Counter {
   @override
   int build() => 5;
@@ -25,9 +24,8 @@ class DarkMode extends _$DarkMode {
   }
 }
 
-@Riverpod(
-    keepAlive:
-        true) // To keep the state alive. If not, it will be destroyed the moment we stop using it.
+// To keep the state alive. If not, it will be destroyed the moment we stop using it.
+@Riverpod(keepAlive: true)
 class RandomName extends _$RandomName {
   @override
   String build() => RandomGenerator.getRandomName();
