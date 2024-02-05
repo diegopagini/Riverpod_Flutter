@@ -23,6 +23,7 @@ class FutureProviderScreen extends ConsumerWidget {
       floatingActionButton:
           Column(mainAxisAlignment: MainAxisAlignment.end, children: [
         FloatingActionButton(
+          heroTag: 'btn-1',
           child: const Icon(Icons.refresh),
           onPressed: () {
             // ref.invalidate(pokemonNameProvider);
